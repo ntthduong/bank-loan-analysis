@@ -4,7 +4,7 @@
 
 This project is an interactive **Power BI dashboard** built to analyze bank loan portfolio performance. The dashboard focuses on monitoring key lending metrics such as loan applications, funded amount, amount received, average interest rate, debt-to-income ratio, and good/bad loan segmentation.
 
-The purpose of this project is to practice building a finance-domain analytics dashboard that supports business users in tracking portfolio performance, understanding repayment behavior, and identifying risk-related loan patterns.
+The main objective of this project is to practice building a finance-domain analytics dashboard that helps business users understand loan portfolio performance, repayment behavior, and potential credit risk patterns.
 
 > This is a guided portfolio project created for learning and practice purposes, with customization in KPI interpretation, dashboard structure, and business insight presentation.
 
@@ -12,7 +12,7 @@ The purpose of this project is to practice building a finance-domain analytics d
 
 ## 2. Business Questions
 
-This dashboard was designed to answer the following questions:
+The dashboard was designed to answer the following business questions:
 
 - How many loan applications were received?
 - What is the total funded amount?
@@ -27,7 +27,7 @@ This dashboard was designed to answer the following questions:
 
 ## 3. Dataset Description
 
-The dataset contains historical bank loan records, including loan amount, funded amount, repayment amount, loan status, borrower information, loan purpose, loan grade, interest rate, debt-to-income ratio, and issue date.
+The dataset contains historical bank loan records, including loan amount, funded amount, repayment amount, loan status, borrower information, loan purpose, loan grade, interest rate, debt-to-income ratio, and loan issue date.
 
 Main fields used in the analysis include:
 
@@ -74,19 +74,19 @@ Main metrics include:
 - Total Funded Amount
 - Total Amount Received
 - Average Interest Rate
-- Average DTI
+- Average Debt-to-Income Ratio
 - Good Loan Percentage
 - Bad Loan Percentage
 - Loan Status Breakdown
 - Month-to-Date and Month-over-Month performance
 
-This page is designed to help users quickly understand overall lending performance and portfolio quality.
+This page helps users quickly evaluate overall lending performance and portfolio quality.
 
 ---
 
 ### 5.2 Overview Page
 
-The Overview page provides a deeper breakdown of loan performance across different dimensions.
+The Overview page provides a deeper breakdown of loan performance across different borrower and loan dimensions.
 
 Main analysis areas include:
 
@@ -97,7 +97,7 @@ Main analysis areas include:
 - Loan amount by loan purpose
 - Loan amount by home ownership
 
-This page helps users explore portfolio patterns by borrower profile, geography, and loan characteristics.
+This page helps users explore portfolio patterns by geography, borrower profile, and loan characteristics.
 
 ---
 
@@ -116,9 +116,9 @@ It allows users to review individual loan records, including:
 - Funded Amount
 - Amount Received
 - Interest Rate
-- DTI
+- Debt-to-Income Ratio
 
-This page supports detailed record-level monitoring and investigation.
+This page supports record-level monitoring and more detailed loan investigation.
 
 ---
 
@@ -129,7 +129,7 @@ This page supports detailed record-level monitoring and investigation.
 | Total Loan Applications | Total number of loan applications |
 | Total Funded Amount | Total loan amount funded by the bank |
 | Total Amount Received | Total repayment amount received from borrowers |
-| Average Interest Rate | Average loan interest rate |
+| Average Interest Rate | Average interest rate across all loans |
 | Average DTI | Average debt-to-income ratio |
 | Good Loan Percentage | Percentage of loans with healthy repayment status |
 | Bad Loan Percentage | Percentage of loans with problematic repayment status |
@@ -140,7 +140,7 @@ This page supports detailed record-level monitoring and investigation.
 
 ## 7. Good Loan vs Bad Loan Classification
 
-Loans are grouped into two main categories:
+Loans are categorized into two main groups:
 
 ### Good Loans
 
@@ -155,7 +155,7 @@ Bad loans include loans with problematic repayment status, such as:
 
 - Charged Off
 
-This classification helps monitor loan portfolio quality and identify potential credit risk patterns.
+This classification helps evaluate loan portfolio quality and identify potential credit risk patterns.
 
 ---
 
@@ -163,20 +163,20 @@ This classification helps monitor loan portfolio quality and identify potential 
 
 Some key observations from the dashboard include:
 
-- Good loan and bad loan segmentation provides a clear view of portfolio quality.
-- Funded amount, amount received, interest rate, and DTI are useful indicators for monitoring loan portfolio performance.
-- Loan performance varies across borrower characteristics such as employment length, home ownership, loan purpose, and loan grade.
+- Good loan and bad loan segmentation provides a clear overview of portfolio quality.
+- Funded amount, amount received, interest rate, and DTI are important indicators for monitoring loan performance.
+- Loan performance varies across borrower characteristics such as employment length, home ownership, loan purpose, and grade.
 - Geographic analysis helps identify regional loan distribution patterns.
-- Monthly trend analysis supports monitoring of loan portfolio growth and repayment performance over time.
+- Monthly trend analysis supports monitoring of portfolio growth and repayment performance over time.
 
 ---
 
-## 9. What I Practiced
+## 9. Skills Practiced
 
 Through this project, I practiced:
 
 - Building an end-to-end Power BI dashboard
-- Designing KPI cards and interactive report pages
+- Creating KPI cards and interactive report pages
 - Cleaning and transforming data using Power Query
 - Creating DAX measures for business KPIs
 - Using slicers and filters to improve dashboard interactivity
@@ -192,7 +192,8 @@ Through this project, I practiced:
 bank-loan-analysis/
 │
 ├── BankLoan.pbix
-└── README.md
+├── README.md
+└── data/
 ```
 
 ---
@@ -200,7 +201,7 @@ bank-loan-analysis/
 ## 11. How to View the Dashboard
 
 1. Download the `BankLoan.pbix` file from this repository.
-2. Open it using Power BI Desktop.
+2. Open the file using Power BI Desktop.
 3. Explore the dashboard pages:
    - Summary
    - Overview
@@ -209,6 +210,12 @@ bank-loan-analysis/
 
 ---
 
-## 12. Acknowledgement
+## 12. Notes
+
+Dashboard screenshots are not included in this version of the repository. The full interactive dashboard can be viewed by downloading and opening the `.pbix` file in Power BI Desktop.
+
+---
+
+## 13. Acknowledgement
 
 This project was built as a guided learning project based on a public Power BI tutorial. The purpose of this repository is to demonstrate hands-on practice in Power BI dashboard development, financial KPI analysis, and data storytelling for a Data Analyst portfolio.
